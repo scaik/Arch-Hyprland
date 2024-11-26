@@ -61,6 +61,7 @@ hypr_package_2=(
   mousepad 
   mpv
   mpv-mpris 
+  neovim
   nvtop
   nwg-look
   pacman-contrib
