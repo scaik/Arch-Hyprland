@@ -10,6 +10,8 @@ zsh=(
 	zsh
 	zsh-completions
 	fzf
+ 	zoxide
+  	bat
 )
 
 
