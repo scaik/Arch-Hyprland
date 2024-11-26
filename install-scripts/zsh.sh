@@ -83,6 +83,12 @@ if command -v zsh >/dev/null; then
 	else
     	echo "Directory zsh-syntax-highlighting already exists. Skipping cloning." 2>&1 | tee -a "$LOG"
 	fi
+
+ 	if [ ! -d "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
+  	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k || true
+   	else
+    	echo "Directory powerlevel10k already exists. Skipping cloning." 2>&1 | tee -a "$LOG"
+     	fi
 	
 	# Check if ~/.zshrc and .zprofile exists, create a backup, and copy the new configuration
 	if [ -f "$HOME/.zshrc" ]; then
