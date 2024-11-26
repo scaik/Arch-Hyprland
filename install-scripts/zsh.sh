@@ -102,6 +102,7 @@ if command -v zsh >/dev/null; then
 	# Copying the preconfigured zsh themes and profile
     cp -r 'assets/.zshrc' ~/
     cp -r 'assets/.zprofile' ~/
+    cp -r 'assets/.p10k.zsh' ~/
 
     printf "${NOTE} Changing default shell to zsh...\n"
 
