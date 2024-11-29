@@ -39,6 +39,7 @@ eval "$(zoxide init zsh)"
 alias cd='z'
 alias cat='bat'
 alias reboot-win='systemctl reboot --boot-loader-entry=auto-windows'
+alias u='yay && flatpak update && rustup update && cargo install-update -a && pnpm update -g'
 
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
