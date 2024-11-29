@@ -5,6 +5,7 @@
 ags=(
     typescript
     npm
+    pnpm
     meson
     glib2-devel
     gjs 
