@@ -223,6 +223,9 @@ execute_script "hyprland.sh"
 # Install AGS from source (older version)
 execute_script "ags.sh"
 
+# Install rustup and cargo bins
+execute_script "rust.sh"
+
 if [ "$nvidia" == "Y" ]; then
     execute_script "nvidia.sh"
 fi
