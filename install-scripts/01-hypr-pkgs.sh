@@ -66,6 +66,7 @@ hypr_package_2=(
   nwg-look
   pacman-contrib
   qalculate-gtk
+  ripgrep
   vim
   yt-dlp
 )
