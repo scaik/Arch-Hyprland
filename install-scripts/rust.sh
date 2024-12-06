@@ -5,10 +5,6 @@ if [[ $USE_PRESET = [Yy] ]]; then
   source ./preset.sh
 fi
 
-rust=(
-  rustup
-)
-
 ## WARNING: DO NOT EDIT BEYOND THIS LINE IF YOU DON'T KNOW WHAT YOU ARE DOING! ##
 
 # Determine the directory where the script is located
@@ -25,10 +21,8 @@ LOG="Install-Logs/install-$(date +%d-%H%M%S)_rust.log"
 
 # Rust
 printf "${NOTE} Installing Rustup and Cargo binaries...\n"  
-  for RUST in "${rust[@]}"; do
-    install_package "$RUST" 2>&1 | tee -a "$LOG"
-    [ $? -ne 0 ] && { echo -e "\e[1A\e[K${ERROR} - $RUST Package installation failed, Please check the installation logs"; exit 1; }
-  done
+# Shit code
+sudo pacman -S rustup
 
 printf "\n%.0s" {1..2}
 
