@@ -22,7 +22,7 @@ LOG="Install-Logs/install-$(date +%d-%H%M%S)_rust.log"
 # Rust
 printf "${NOTE} Installing Rustup and Cargo binaries...\n"  
 
-install_package "rustup" 2>&1 | tee -a "$LOG"
+install_package_pacman "rustup" 2>&1 | tee -a "$LOG"
 [ $? -ne 0 ] && { echo -e "\e[1A\e[K${ERROR} - rustup Package installation failed, Please check the installation logs"; exit 1; }
 
 printf "\n%.0s" {1..2}
