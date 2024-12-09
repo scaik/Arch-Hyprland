@@ -67,6 +67,7 @@ hypr_package_2=(
   pacman-contrib
   qalculate-gtk
   ripgrep
+  rustup
   vim
   yt-dlp
 )
@@ -77,6 +78,7 @@ uninstall=(
   dunst
   mako
   rofi
+  rust
   wallust-git
 )
 
@@ -121,6 +123,10 @@ for PKG1 in "${hypr_package[@]}" "${hypr_package_2[@]}" "${Extra[@]}"; do
     exit 1
   fi
 done
+
+rustup default stable
+
+cargo install cargo-update
 
 clear
 
