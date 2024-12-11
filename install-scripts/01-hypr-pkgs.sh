@@ -36,6 +36,7 @@ hypr_package=(
   qt6ct
   qt6-svg
   rofi-wayland
+  rustup
   slurp 
   swappy 
   swaync 
@@ -67,7 +68,6 @@ hypr_package_2=(
   pacman-contrib
   qalculate-gtk
   ripgrep
-  rustup
   vim
   yt-dlp
 )
