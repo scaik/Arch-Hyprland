@@ -4,7 +4,7 @@
 # NOTE: These package check are only the essentials
 
 packages=(
-  aylurs-gtk-shell
+  #aylurs-gtk-shell
   cliphist
   kvantum
   rofi-wayland
