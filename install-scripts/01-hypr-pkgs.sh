@@ -77,6 +77,7 @@ uninstall=(
   aylurs-gtk-shell
   dunst
   mako
+  cachyos-hyprland-settings
   rofi
   rust
   wallust-git
