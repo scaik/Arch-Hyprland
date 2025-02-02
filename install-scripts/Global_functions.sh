@@ -8,9 +8,10 @@ set -e
 OK="$(tput setaf 2)[OK]$(tput sgr0)"
 ERROR="$(tput setaf 1)[ERROR]$(tput sgr0)"
 NOTE="$(tput setaf 3)[NOTE]$(tput sgr0)"
-WARN="$(tput setaf 5)[WARN]$(tput sgr0)"
+WARN="$(tput setaf 1)[WARN]$(tput sgr0)"
 CAT="$(tput setaf 6)[ACTION]$(tput sgr0)"
-ORANGE=$(tput setaf 166)
+MAGENTA=$(tput setaf 5)
+WARNING=$(tput setaf 1)
 YELLOW=$(tput setaf 3)
 RESET=$(tput sgr0)
 
@@ -28,7 +29,7 @@ install_package_pacman() {
   else
     # Package not installed
     echo -e "${NOTE} Installing $1 ..."
-    sudo pacman -S --noconfirm "$1" 2>&1 | tee -a "$LOG"
+    sudo pacman -S --noconfirm --needed "$1" 2>&1 | tee -a "$LOG"
     # Making sure package is installed
     if pacman -Q "$1" &>/dev/null ; then
       echo -e "\e[1A\e[K${OK} Package ${YELLOW}$1${RESET} has been successfully installed!"
@@ -51,7 +52,7 @@ install_package() {
   else
     # Package not installed
     echo -e "${NOTE} Installing $1 ..."
-    $ISAUR -S --noconfirm "$1" 2>&1 | tee -a "$LOG"
+    $ISAUR -S --noconfirm --needed "$1" 2>&1 | tee -a "$LOG"
     # Making sure package is installed
     if $ISAUR -Q "$1" &>> /dev/null ; then
       echo -e "\e[1A\e[K${OK} Package ${YELLOW}$1${RESET} has been successfully installed!"

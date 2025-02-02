@@ -54,6 +54,9 @@ https://github.com/JaKooLit/Hyprland-Dots/assets/85185940/50d53755-0f11-45d6-991
 </div>
 
 ### Gallery and Videos
+
+- latest Ksk royal's [youtube video](https://youtu.be/lR7EtbVYWuc?si=eNHVSbStKS1eNVly) installation
+  
 <details>
 <summary>
 📷 Screenshots
@@ -168,8 +171,12 @@ source ~/.zshrc
 - CD into Arch-Hyprland directory and then ran the below command. 
 - i.e. `./install-scripts/gtk-themes.sh` - For reinstall GTK Themes or
 - `./install-scripts/sddm.sh` - For reinstall sddm
+
 > [!IMPORTANT]
 > DO NOT cd into install-scripts directory as script will most likely to fail
+
+#### 🎞️ AGS Overview DEMO
+- in case you wonder, here is a short demo of AGS overview [Youtube LINK](https://youtu.be/zY5SLNPBJTs)
 
 #### 🛣️ Roadmap:
 - ~~[ ] Install zsh and oh-my-zsh without necessary steps above~~ DONE 
@@ -210,6 +217,12 @@ env = WLR_RENDERER_ALLOW_SOFTWARE,1
 
 #### 🫥 Improving performance for Older Nvidia Cards using driver 470
   - [`SEE HERE`](https://github.com/JaKooLit/Hyprland-Dots/discussions/123#discussion-6035205)
+
+
+#### ➕ Added Hyprland install either git or non-git version
+- on assets directory of Arch-Hyprland, you will find install scripts to assist in switching non-git and git version of hyprland
+- pretty straight forward `chmod +x actions.sh` `./actions.sh` and `1 for non-git` and `2 for git version`
+
 
 #### 📒 Final Notes
 - join my discord channel [`Discord`](https://discord.com/invite/9JEgZsfhex)
